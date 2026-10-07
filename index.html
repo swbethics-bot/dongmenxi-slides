@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>本市流域治理－東門溪整治成效｜桃園市政府水務局</title>
+<style>
+:root{--deep:#0b3a5c;--sea:#1f7fb5;--foam:#e8f4fa;--leaf:#0d6b45;--mark:#c8372d;--ink:#17303f;--line:#b9d8e8;--paper:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;background:#06243a;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--ink)}
+#wrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1280px;height:720px;flex:none;transform-origin:center;background:linear-gradient(180deg,#f4fbff 0%,#fff 55%,#d8edf7 100%);overflow:hidden;box-shadow:0 10px 50px #0008}
+.slide{position:absolute;inset:0;padding:48px 64px 64px;opacity:0;visibility:hidden;transition:opacity .35s}
+.slide.on{opacity:1;visibility:visible}
+.slide:before{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:repeating-linear-gradient(176deg,#1f7fb5 0 3px,#3a97c7 3px 7px,#6db6d9 7px 11px);opacity:.28}
+.slide>*{position:relative}
+h2{font-size:40px;font-weight:800;color:var(--deep);padding-bottom:12px;border-bottom:4px solid var(--sea);margin-bottom:26px}
+h2 small{font-size:22px;font-weight:500;color:var(--sea);margin-left:16px}
+.big{font-size:56px;font-weight:900;color:var(--deep);line-height:1.25}
+.red{color:var(--mark);font-weight:800}.grn{color:var(--leaf);font-weight:800}
+.row{display:flex;gap:22px}.col{display:flex;flex-direction:column;gap:16px}.f1{flex:1}.f2{flex:2}
+.card{background:var(--paper);border:2px solid var(--line);border-left:8px solid var(--sea);border-radius:6px;padding:16px 22px;font-size:25px;line-height:1.5}
+.card b{display:block;font-size:27px;color:var(--deep);margin-bottom:4px}
+.card.r{border-left-color:var(--mark)}.card.g{border-left-color:var(--leaf)}
+.tag{display:inline-block;background:var(--deep);color:#fff;font-size:20px;padding:2px 12px;border-radius:3px;margin-right:8px}
+.kv{border:3px dashed var(--sea);padding:14px 22px;font-size:28px;line-height:1.6;background:#ffffffcc}
+.num{font-size:84px;font-weight:900;color:var(--mark);line-height:1}
+ul{list-style:none}li{font-size:27px;line-height:1.55;padding-left:30px;position:relative;margin-bottom:10px}
+li:before{content:"";position:absolute;left:4px;top:.6em;width:12px;height:12px;background:var(--sea);border-radius:50%}
+table{width:100%;border-collapse:collapse;font-size:25px;background:#fff}
+th{background:var(--deep);color:#fff;padding:10px 14px;font-weight:700}
+td{padding:11px 14px;border:1px solid var(--line);text-align:center}
+tr:nth-child(even) td{background:var(--foam)}
+tfoot td{background:#fff3f1!important;font-weight:800;color:var(--mark)}
+.note{font-size:23px;line-height:1.6;margin-top:16px;color:var(--deep)}
+.cover{background:linear-gradient(160deg,#0b3a5c,#1f7fb5 60%,#7fc4e3);color:#fff;padding:90px 80px}
+.cover:before{opacity:.35}
+.cover .logo{font-size:30px;font-weight:700;letter-spacing:.1em;margin-bottom:60px}
+.cover h1{font-size:76px;line-height:1.25;font-weight:900;margin-bottom:34px}
+.cover p{font-size:30px;line-height:1.8}
+.div{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#e8f4fa,#fff)}
+.div .big{color:var(--leaf);text-align:center}
+.tl{display:flex;align-items:stretch;gap:0;margin:12px 0}
+.tl div{flex:1;background:var(--foam);border:2px solid var(--line);padding:8px;text-align:center;font-size:24px;line-height:1.5;position:relative}
+.tl div+div{margin-left:26px}
+.tl div+div:before{content:"▶";position:absolute;left:-26px;top:50%;transform:translateY(-50%);color:var(--sea);font-size:20px}
+.tl b{display:block;color:var(--mark);font-size:28px}
+.ba{display:flex;gap:24px;align-items:stretch}
+.ba>div{flex:1;border-radius:8px;padding:18px 22px;font-size:25px;line-height:1.55;background:#fff;border:3px solid var(--line)}
+.ba .a{border-color:var(--leaf)}.ba h3{font-size:32px;margin-bottom:6px;color:var(--deep)}
+.arr{align-self:center;font-size:44px;color:var(--sea)}
+#bar{position:fixed;left:0;top:0;height:4px;background:#5fd0a0;z-index:5;transition:width .3s}
+#ui{position:fixed;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center;z-index:5;background:#06243acc;padding:6px 12px;border-radius:30px;color:#fff;font-size:15px;opacity:.9}
+#ui button{background:#1f7fb5;color:#fff;border:0;border-radius:20px;min-width:38px;height:32px;font-size:16px;cursor:pointer}
+#ui button:hover,#ui button:focus-visible{background:#3a97c7;outline:2px solid #fff}
+#cnt{min-width:64px;text-align:center}
+@media (prefers-reduced-motion:reduce){.slide{transition:none}}
+.pic{display:block;border:2px solid var(--line);border-radius:6px;background:#fff;object-fit:contain;max-width:100%}
+.map{height:540px;width:auto}.side{flex:none}
+.pg{display:grid;gap:12px}.pg img{width:100%;height:100%;object-fit:cover}
+.cap{font-size:18px;color:var(--deep);text-align:center;margin-top:4px}
+.cover .cv{position:absolute;right:70px;top:60px;height:600px;border:0;border-radius:10px;box-shadow:0 8px 30px #0006}
+.cover h1,.cover p,.cover .logo{position:relative;max-width:640px}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div id="wrap"><div id="stage"></div></div>
+<div id="ui"><button id="pv" aria-label="上一頁">◀</button><span id="cnt"></span><button id="nx" aria-label="下一頁">▶</button><button id="fs" aria-label="全螢幕">⛶</button></div>
+<script>
+const D=t=>`<div class="slide div"><div class="big">${t}</div></div>`;
+const S=(t,b,s)=>`<div class="slide"><h2>${t}${s?`<small>${s}</small>`:""}</h2>${b}</div>`;
+const slides=[
+`<div class="slide cover"><img class="cv pic" src="img/cover.jpg" alt=""><div class="logo">桃園市政府　TAOYUAN CITY GOVERNMENT</div><h1>本市流域治理<br>－東門溪整治成效</h1><p>115年9月22日<br>簡報機關及簡報人：水務局　邱鵬豪總工程司</p></div>`,
+S("報告大綱",`<ul style="margin-top:30px"><li style="font-size:40px;margin-bottom:26px">壹、前言</li><li style="font-size:40px;margin-bottom:26px">貳、流域綜合治理</li><li style="font-size:40px;margin-bottom:26px">參、現有污水設施與下水道建置</li><li style="font-size:40px">肆、結語</li></ul>`),
+D("壹、前言"),
+S("壹、前言","", "東門溪排水幹線").replace("</div>",`<div class="row"><div class="col f1"><div class="kv">自八德大湳起至桃園南崁溪<br>貫穿<span class="red">桃園市、新北市19個行政里</span></div><div class="kv">權責起點：<span class="red">南崁溪匯流口</span><br>權責終點：<span class="red">八德大竹埤塘</span></div><div class="kv">主流長度<span class="red">8.24公里</span><br>集水面積<span class="red">22平方公里</span></div></div><img class="pic map side" src="img/map_trunk.jpg" alt="東門溪排水幹線圖"></div></div>`),
+S("壹、前言",`<div class="row"><img class="pic map side" src="img/map_old.jpg" alt="105-111年淹水熱區"><div class="pg f1" style="grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr"><div><img class="pic" src="img/old1.jpg" style="height:210px;width:100%;object-fit:cover" alt=""><div class="cap">桃鶯路、龜山工業區大灣溝溢流（105.05.16）</div></div><div><img class="pic" src="img/old2.jpg" style="height:210px;width:100%;object-fit:cover" alt=""><div class="cap">桃鶯路淹水深度達80公分（105.05.16）</div></div><div><img class="pic" src="img/old3.jpg" style="height:210px;width:100%;object-fit:cover" alt=""><div class="cap">樹仁二街、桃鶯路下水道冒孔（105.05.16）</div></div><div><img class="pic" src="img/old4.jpg" style="height:210px;width:100%;object-fit:cover" alt=""><div class="cap">興邦路、龜山工業區積淹水（108.07）</div></div></div></div>`,"112年前積淹水範圍"),
+S("壹、前言",`<div class="row"><img class="pic map side" src="img/map_new.jpg" alt="112-114年淹水熱區與滯洪池位置" style="height:520px"><div class="col f1" style="gap:8px"><div class="row" style="gap:8px"><div class="f1"><img class="pic" src="img/p_dalin.jpg" style="width:100%;height:150px;object-fit:cover" alt=""><div class="cap">大灣溝流域</div></div><div class="f1"><img class="pic" src="img/p_danan.jpg" style="width:100%;height:150px;object-fit:cover" alt=""><div class="cap">大灣溝流域</div></div><div class="f1"><img class="pic" src="img/p_daren.jpg" style="width:100%;height:150px;object-fit:cover" alt=""><div class="cap">東門溪流域</div></div><div class="f1"><img class="pic" src="img/p_fengming.jpg" style="width:100%;height:150px;object-fit:cover" alt=""><div class="cap">東門溪流域</div></div></div><div class="row" style="gap:12px;align-items:center"><div class="f1"><img class="pic" src="img/p_xingbang.jpg" style="width:100%;height:170px;object-fit:cover" alt=""><div class="cap">興邦路積淹水（114.11.30）</div></div><div class="f1" style="text-align:center"><div style="font-size:24px;font-weight:700">淹水改善面積達</div><div class="num" style="font-size:72px">76.5%</div><div class="note" style="font-size:19px;margin:0">興邦路43巷雨水下水道改建工程（114年11月完工）</div></div></div><div class="kv" style="font-size:22px;padding:8px 16px;text-align:center">桃園新北聯手整治東門溪，建立滯洪池聯合調控</div></div></div>`,"112年後積淹水改善情形及相關整治"),
+S("壹、前言",`<div class="row" style="gap:40px"><div class="col f1"><img class="pic" src="img/ch_flood.jpg" style="height:170px;margin:0 auto;border-radius:50%" alt=""><div class="card r" style="text-align:center;font-size:34px;font-weight:900;color:var(--mark);padding:8px">淹水風險</div><div class="card" style="font-size:22px;padding:8px 22px">部分河道寬度束縮瓶頸</div><div class="card" style="font-size:22px;padding:8px 22px">護岸兩側建物限制</div><div class="card" style="font-size:22px;padding:8px 22px">多系統排水路交錯</div></div><div class="col f1"><img class="pic" src="img/ch_sewage.jpg" style="height:170px;margin:0 auto;border-radius:50%" alt=""><div class="card" style="text-align:center;font-size:34px;font-weight:900;color:var(--deep);padding:8px">污水排入</div><div class="card" style="font-size:22px;padding:8px 22px">流經都市工商密集區</div><div class="card" style="font-size:22px;padding:8px 22px">都市計畫發展限制</div><div class="card" style="font-size:22px;padding:8px 22px">污水下水道接管困難</div></div></div>`,"東門溪流域現況挑戰"),
+S("壹、前言",`<div class="row" style="align-items:flex-start"><div class="f1"><div class="card r" style="font-size:24px;padding:8px 16px"><span class="tag">A</span>大明街積淹水（115.06.25）</div><img class="pic" src="img/pt_A.jpg" style="height:430px;width:100%;margin-top:8px;object-fit:cover" alt=""></div><img class="pic map side" src="img/map_pts.jpg" alt="積淹水點位置" style="height:520px"><div class="f1"><div class="card r" style="font-size:24px;padding:8px 16px"><span class="tag">B</span>桃鶯路與興隆街積淹水（115.06.07）</div><img class="pic" src="img/pt_B.jpg" style="height:300px;width:100%;margin-top:8px;object-fit:cover" alt=""></div></div>`,"現況積淹水點改善工程"),
+D("貳、流域綜合治理"),
+S("貳、流域綜合治理",`<div class="row"><img class="pic map side" src="img/map_A.jpg" alt="大灣溝位置" style="height:500px"><div class="f1"><div class="card r" style="font-size:21px;padding:8px 18px"><span class="tag">A</span><b style="display:inline">大明街－115.06.25積水</b><br>積淹水原因：<br>① 緊鄰民宅，部分民宅建於河道上方（民宅加蓋）<br>② 排水瓶頸段，遇強降雨水位上升快</div><img class="pic" src="img/ph_A.jpg" style="width:100%;height:120px;object-fit:cover;margin-top:10px" alt=""><div class="card g" style="margin-top:10px;font-size:21px;padding:8px 18px"><span class="tag">本次工程・117年施工</span><b style="display:inline">大灣溝排水支線（大豐路至樹仁二街）治理工程</b><br>依治理計畫改建護岸<span class="red">247m</span>及箱涵<span class="red">124m</span>。<br><span class="grn">改善排水瓶頸區段</span></div></div></div>`,"大灣溝排水治理"),
+S("貳、流域綜合治理",`<div class="row" style="gap:20px;align-items:center"><img class="pic" src="img/ph_B.jpg" style="height:150px" alt=""><div class="card r f1" style="font-size:23px"><span class="tag">B</span><b style="display:inline">桃鶯路與興隆街－115.06.07積水</b><br>積淹水原因：① 路面相對低窪　② 側溝無法排入東門溪</div></div><p style="font-size:27px;font-weight:700;color:var(--deep);margin:18px 0 6px">改善歷程－加速堤後排水（短期方案）</p><div class="tl"><div><b>112年</b>既有<span class="red">2組</span>固定式抽水機組</div><div><b>114.05.26</b>佈設移動式抽水機（1組）</div><div><b>115.02完工</b>增設<span class="red">3組</span>固定式抽水機</div><div><b>現況</b>共6組（5固定、1移動）<br>0.83 cms</div></div><img class="pic" src="img/ph_pump.jpg" style="height:135px;margin:0 auto" alt="佈設移動式抽水機（114.05.26）與增設固定式抽水機（115.02完工）">`,"東門溪排水幹線治理（1/2）"),
+S("貳、流域綜合治理",`<div class="card g"><span class="tag">本次工程・118年施工</span><b style="display:inline">東門溪（桃鶯路至國道2號）治理工程</b><br>依治理計畫加高護岸<span class="red">1m</span>及浚深<span class="red">1.5~2m</span>，治理長度<span class="red">716m</span><br><span class="grn">側溝重力排水、減少抽水使用頻率</span></div><img class="pic" src="img/diagram.jpg" style="width:100%;margin-top:16px" alt="改善前後示意圖">`,"東門溪排水幹線治理（2/2）"),
+S("貳、流域綜合治理",`<div class="row"><div class="f2"><table style="font-size:21px"><thead><tr><th>排水</th><th>工程名稱</th><th>用地費<br>(億元)</th><th>工程費<br>(億元)</th><th>工程內容</th></tr></thead><tbody><tr><td>A.大灣溝</td><td>大灣溝排水支線<br>（大豐路至樹仁二街）治理工程</td><td>－</td><td>1.860<br>（爭取中）</td><td style="text-align:left">① 護岸改建247m<br>② 箱涵改建124m</td></tr><tr><td>B.東門溪</td><td>東門溪（桃鶯路至國道2號）<br>治理工程</td><td>1.207</td><td>2.248</td><td style="text-align:left">① 治理長度716m<br>② 河道濬深1.5~2m、加高護岸1m</td></tr></tbody><tfoot><tr><td colspan="2">總治理經費</td><td>1.207</td><td>4.108</td><td>合計5.315億</td></tr></tfoot></table></div><img class="pic map side" src="img/map_todo.jpg" alt="待建工程位置" style="height:500px"></div>`,"115~118年待建工程一覽"),
+D("參、現有污水設施與下水道建置"),
+S("參、現有污水設施與下水道建置",`<div class="row"><div class="f1"><table style="font-size:21px"><thead><tr><th>地區</th><th>權責單位</th><th>規劃施作時程</th></tr></thead><tbody><tr><td>桃園都市計畫區範圍</td><td>本局（桃園污水BOT）</td><td>110-119年</td></tr><tr><td>桃園非都市計畫區範圍<br>（人口稠密區）</td><td>無</td><td class="red">本局116年將評估可行性</td></tr><tr><td>龜山工業區</td><td>經濟部工業局</td><td>101年完成污水廠更新</td></tr><tr><td>新北市鳳鳴重劃區</td><td>新北市政府</td><td>125年啟動</td></tr></tbody></table><p class="note" style="font-size:18px;margin-top:8px">▸ 流域範圍包括桃園都市計畫區、桃園非都市計畫區、龜山工業區及新北市（鶯歌）鳳鳴重劃區。<br>▸ 桃園轄內門牌90,138戶，已規劃銜接桃園污水BOT 75,430戶（約83.7%）；非都市計畫區（人口稠密區）約13,000戶（約14.3%）；其餘（工廠及人口零星區）2%。</p></div><img class="pic map side" src="img/map_sewer.jpg" alt="流域污水範圍" style="height:500px"></div>`,"東門溪流域內沿線污/廢水"),
+S("參、現有污水設施與下水道建置",`<div class="row"><div class="f1"><table style="font-size:21px"><thead><tr><th>標別</th><th>設計戶數</th><th>完成戶數</th><th>規劃施作時程</th></tr></thead><tbody><tr><td>慈文路地區</td><td>17,983</td><td>13,174</td><td>110-116年</td></tr><tr><td>市府周邊地區</td><td>22,367</td><td>11,864</td><td>112-117年</td></tr><tr><td>三民成功地區</td><td>16,632</td><td>9,289</td><td>112-117年</td></tr><tr><td>擴大桃園延平路地區</td><td>10,596</td><td>400</td><td>114-119年</td></tr></tbody></table><p class="note" style="font-size:19px">▸ 東門溪沿線桃園市區標案設計接管戶數<span class="red">67,578</span>戶、實際接管戶數<span class="red">34,727</span>戶，已銜接約<span class="red">51.4%</span>。<br>▸ 目前持續辦理用戶接管作業，預計<span class="red">119年前完成</span>。</p></div><img class="pic side" src="img/map_conn.jpg" alt="都計內沿線用戶接管分區" style="height:430px;margin-top:20px"></div>`,"都計內沿線用戶接管情況"),
+S("參、水質淨化設施建設",`<div class="row"><img class="pic map side" src="img/map_plant.jpg" alt="水質淨化設施位置" style="height:520px"><div class="col f1" style="gap:10px"><div class="row" style="gap:10px"><div class="card g f1" style="font-size:20px;padding:8px 12px"><b style="font-size:22px">小檜溪水質淨化設施</b>環保局 15,000 CMD<br><span class="tag">116年啟用</span><br>氨氮去除率目標達90%，放流水氨氮濃度控制於3毫克/公升以下</div><img class="pic" src="img/pl_xj.jpg" style="height:210px" alt=""></div><div class="row" style="gap:10px"><div class="card g f1" style="font-size:20px;padding:8px 12px"><b style="font-size:22px">建國公園水質淨化設施</b>環保局 10,000 CMD<br><span class="tag">規劃設計中</span></div><img class="pic" src="img/pl_jg.jpg" style="height:110px;width:55%;object-fit:cover" alt=""></div><div class="row" style="gap:10px"><div class="card g f1" style="font-size:20px;padding:8px 12px"><b style="font-size:22px">朝陽礫間淨化設施</b>水務局 10,000 CMD<br><span class="tag">運轉中</span></div><img class="pic" src="img/pl_cy.jpg" style="height:110px;width:55%;object-fit:cover" alt=""></div><div class="kv" style="text-align:center;font-size:22px;padding:6px">完工後每日設計處理水量可達 <span class="red">35,000 CMD</span></div></div></div>`,""),
+D("肆、結語"),
+S("肆、結語",`<div class="row"><div class="card f1"><b>防洪韌性</b><ul><li style="font-size:23px">完成<span class="red">4座滯洪池</span>，為東門溪流域提供<span class="red">47.3萬立方公尺</span>調控空間。</li><li style="font-size:23px">持續改善流域內排水瓶頸段<span class="red">2處</span>，滿足區排通洪能力<span class="red">25年重現期</span>保護標準。</li></ul></div><div class="card g f1"><b>水質改善</b><ul><li style="font-size:23px"><span class="red">119年度</span>完成東門溪周邊地區都市計畫內<span class="red">67,578戶</span>接管目標。</li><li style="font-size:23px">爭取市府補助東門溪上游非都市計畫區範圍（人口稠密區）約<span class="red">1.3萬戶</span>接管經費。</li></ul></div></div><div class="card" style="margin-top:20px"><b>環境營造</b>提昇防洪韌性及水質改善，東門溪主流朝<span class="red">開蓋親水願景</span>推動。</div>`,""),
+`<div class="slide cover div" style="flex-direction:column;text-align:center"><div class="big" style="color:#fff;font-size:70px;letter-spacing:.3em">簡報結束<br>敬請指導</div></div>`
+];
+const st=document.getElementById("stage");st.innerHTML=slides.join("");
+const els=[...st.children];let i=0;
+function go(n){i=Math.max(0,Math.min(els.length-1,n));els.forEach((e,k)=>e.classList.toggle("on",k===i));
+document.getElementById("cnt").textContent=(i+1)+" / "+els.length;
+document.getElementById("bar").style.width=((i+1)/els.length*100)+"%";
+history.replaceState(null,"","#"+(i+1));}
+function fit(){const s=Math.min(innerWidth/1280,(innerHeight-0)/720);st.style.transform="scale("+s+")";}
+addEventListener("resize",fit);fit();
+document.getElementById("pv").onclick=()=>go(i-1);
+document.getElementById("nx").onclick=()=>go(i+1);
+document.getElementById("fs").onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();
+addEventListener("keydown",e=>{
+if(["ArrowRight","ArrowDown","PageDown"," "].includes(e.key)){e.preventDefault();go(i+1)}
+else if(["ArrowLeft","ArrowUp","PageUp"].includes(e.key)){e.preventDefault();go(i-1)}
+else if(e.key==="Home")go(0);else if(e.key==="End")go(els.length-1);else if(e.key==="f")document.getElementById("fs").click();});
+let x0=null;addEventListener("touchstart",e=>x0=e.touches[0].clientX,{passive:true});
+addEventListener("touchend",e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(i+(d<0?1:-1));x0=null;});
+addEventListener("wheel",(()=>{let t=0;return e=>{const n=Date.now();if(n-t<500)return;t=n;go(i+(e.deltaY>0?1:-1))}})(),{passive:true});
+go((parseInt(location.hash.slice(1))||1)-1);
+</script>
+</body>
+</html>
